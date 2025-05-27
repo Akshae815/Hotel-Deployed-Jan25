@@ -24,7 +24,7 @@ def main():
     st.title('IN HOTEL GROUP')
     lt = st.text_input('Enter The Lead Time in Days:')  
     mkt=(lambda x:1 if x=='Online' else 0)(st.selectbox('How the booking is made',['Online','Offline']))
-    price st.text_input('Enter the price of the room ')
+    price =st.text_input('Enter the price of the room ')
     adult = st.selectbox('How many adult',[1,2,3,4])
     arr_m = st.slider('What is th month of arrival',min_value=1,max_value=12,step=1)
     weekd_lambda = (lambda x:0 if x=='Mon' else
