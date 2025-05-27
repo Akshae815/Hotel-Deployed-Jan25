@@ -29,11 +29,10 @@ def main():
     arr_m = st.slider('What is th month of arrival',min_value=1,max_value=12,step=1)
     weekd_lambda = (lambda x:0 if x=='Mon' else
                              1 if x=='Tues'else
-                             2  if x=='Wed' else
+                             2 if x=='Wed' else
                              3 if x=="Thu"else
-                            4 if x=='Fri' else
-                            5 if x=='Sat' else
-                            6 if x=='Sun')
+                             4 if x=='Fri' else
+                             5 if x=='Sat' else 6)
     arr_w = weekd_lambda(st.selectbox('What is weekday of arrival ?',['Mon','Tues','Wed','Thu','Fri','Sat','Sun']))
     dee_w = weekd_lambda(st.selectbox('What is weekday of departure  ?',['Mon','Tues','Wed','Thu','Fri','Sat','Sun']))
     weekn =st.text_input('Enter the number of week night in stay')
