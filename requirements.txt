@@ -1,5 +1,5 @@
-xgboost==3.0.1
+xgboost
 scikit-learn==1.5.1
-streamlit==1.37.1
+streamlit
 joblib
-python==3.12.7
+python
